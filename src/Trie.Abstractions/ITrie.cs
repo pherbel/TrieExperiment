@@ -5,8 +5,8 @@ using System.Threading.Tasks;
 
 namespace Trie.Abstractions
 {
-    public interface ITrie
+    public interface ITrie: IDisposable
     {
-        ValueTask<QueryResult> GetWords(Span<byte> prefix, byte top);
+        ValueTask<QueryResult> GetWords(/*Span<byte>*/ string  prefix, byte top);
     }
 }

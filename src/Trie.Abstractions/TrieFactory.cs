@@ -9,7 +9,10 @@ namespace Trie.Abstractions
     {
         public ValueTask<ITrie> LoadFromDataProvider(IDataSetProvider provider)
         {
-            throw new NotImplementedException();
+            var result = provider.Load().GetAwaiter().GetResult();
+
+            return new ValueTask<ITrie>((ITrie)null);
+            
         }
     }
 }

@@ -3,7 +3,8 @@
 
   "dependencies": {
     "NETStandard.Library": "1.6.0",
-    "System.Threading.Tasks.Extensions": "4.3.0"
+    "System.Threading.Tasks.Extensions": "4.3.0",
+    "System.IO.Pipelines.Text.Primitives": "0.1.0-*"
   },
 
   "frameworks": {
